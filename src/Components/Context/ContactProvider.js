@@ -65,6 +65,7 @@ const ContactProvider = (props) => {
     async function saveEditedContact (editedContact){
         try{
             await axios.patch(`${API}/${editedContact.id}`, editedContact)
+            getContacts()
         }catch(error){
             console.log(error);
         }

@@ -47,6 +47,7 @@ const EditContact = ({ showContactToEdit, handleCloseContactToEdit, storeId}) =>
         }
 
         saveEditedContact(editedContact)
+        handleCloseContactToEdit()
         // navigate('/')
     }
 

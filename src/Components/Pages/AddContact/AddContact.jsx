@@ -29,6 +29,7 @@ const AddContact = ({showContact, handleCloseContact }) => {
         setPhone('')
         setEmail('')
         setImg('')
+        handleCloseContact()
     }
 
 
